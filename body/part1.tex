@@ -1,74 +1,7 @@
-%!TEX program = xelatex 
-\documentclass[a4paper,zihao=-4]{article}
-\usepackage[UTF8,punct,linespread=1.56]{ctex}
-% \documentclass[a4paper,cs4size,UTF8,punct,linespread=1.56]{ctexart}
-\pagestyle{empty} % 第二页以后页码空白
-\usepackage[a4paper, left = 3.2cm, right = 3.2cm, top = 2.54cm, bottom = 2.54cm]{geometry}
-\usepackage{xcolor}
-% \usepackage[citebordercolor = white]{hyperref}
-\usepackage[hidelinks]{hyperref}
-\usepackage{graphicx} 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{times}
-\usepackage[subrefformat=parens,labelformat=parens]{subfig} %
-\usepackage{booktabs} % for \toprule \midrule \bottomrule \cmidrule
-\usepackage{cleveref}
-\crefformat{table}{表~#2#1#3}
-\crefformat{figure}{图~#2#1#3}
-\crefformat{equation}{式~（#2#1#3）}
-\usepackage{enumitem}
-% \setenumerate[1]{itemsep = 0pt, parsep = 0pt, topsep = 2bp}
-\setlist[enumerate]{itemsep = 0pt, parsep = 0pt, topsep = 2bp}
-% \setitemize[1]{itemsep = 0pt, parsep = 0pt, topsep = 2bp}
-\setlist[itemize]{itemsep = 0pt, parsep = 0pt, topsep = 2bp}
-\usepackage{fontspec}
-\setmainfont{Times New Roman}
-% \usepackage{minted}   % For syntax highlighting
-% \usemintedstyle{friendly}
-\usepackage{setspace} 
-\usepackage{caption}
-\DeclareCaptionFont{capfont}{\kaishu\zihao{-4}\selectfont} % Caption font
-\DeclareCaptionFont{subfont}{\kaishu\zihao{5}\selectfont} % Sub-caption font
-\captionsetup{font = capfont}
-\captionsetup[subfigure]{font = subfont}
-\captionsetup[figure]{labelsep=space} % 空格 space；点 period；冒号 colon
-\captionsetup[table]{labelsep=space}  % 空格 space；点 period；冒号 colon
-\usepackage[square,numbers,sort&compress]{natbib}   % For Reference
-\newcommand{\citess}[1]{\textsuperscript{\cite{#1}}}
-\setlength{\bibsep}{1pt plus 0.3ex}
-\usepackage{titlesec}
-\titleformat{\subsubsection}[block]{\hspace{3em}}{\thesubsubsection}{1em}{}
-\usepackage{insfc}
-
-
-
-\graphicspath{{images/}}   % 设置图片所存放的目录
-
-\begin{document}
-
-\kaishu
-
-% Decrease space above and below equations
-\setlength{\abovedisplayskip}{0pt}
-\setlength{\belowdisplayskip}{0pt}
-
-%%%%%%%%% TITLE %%%%%%%%%
-% \title{报告正文 \vspace{-3.4ex}}
-% \title{报告正文}
-% \maketitle
-\begin{center}
-	{\kaishu \zihao{2} \textbf{报告正文} \vspace{-3ex}}
-\end{center}  
-
-\thispagestyle{empty} 　　　% 首页页码空白
-
-%%%%%%%%% Your Content %%%%%%%%%
-{\kaishu \zihao{4}参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。}\alert{请勿删除或改动下述提纲标题及括号中的文字。\vspace{9bp}}
 
 \NsfcChapter{（一）立项依据与研究内容}{（4000-8000字）：}
 
-\NsfcSection{1}{项目的立项依据}{（研究意义、国内外研究现状及发展动态分析，需结合科学研究发展趋势来论述科学意义；或结合国民经济和社会发展中迫切需要解决的关键科技问题来论述其应用前景。附主要参考文献目录）；}
+\NsfcSection{项目的立项依据}{（研究意义、国内外研究现状及发展动态分析，需结合科学研究发展趋势来论述科学意义；或结合国民经济和社会发展中迫切需要解决的关键科技问题来论述其应用前景。附主要参考文献目录）；}
 
 对于高校教师和研究人员来说，国家自然科学基金（National Natural Science Foundation of China，NSFC）非常重要，写出能让所有专家都满意的本子也相当的耗时。对于平时只采用 LaTeX 格式投稿论文的老师来说，由于基金委只给出了 Word 模板，这种切换大致会有下面一些不方便：
 \begin{itemize}
@@ -95,7 +28,7 @@
 	      \end{itemize}  
 \end{enumerate}
 
-另一个模板是今年1月8号，南开大学的程明明教授\footnote{程明明教授个人主页：\href{http://mmcheng.net}\href{http://mmcheng.net}}曾在 CTeX 论坛上给出过一个国家自然科学基金的 LaTeX 模版\footnote{程明明教授提供的模板：\href{http://www.latexstudio.net/archives/9308}{http://www.latexstudio.net/archives/9308}}。受程明明教授先驱工作的启发，我们也做了一点微小的工作。
+另一个模板是2017年1月8号，南开大学的程明明教授\footnote{程明明教授个人主页：\href{http://mmcheng.net}\href{http://mmcheng.net}}曾在 CTeX 论坛上给出过一个国家自然科学基金的 LaTeX 模版\footnote{程明明教授提供的模板：\href{http://www.latexstudio.net/archives/9308}{http://www.latexstudio.net/archives/9308}}。受程明明教授先驱工作的启发，我们也做了一点微小的工作。
 
 \subsection{动机}
 已有珠玉在前，我们之所以还要重新造轮子，主要是参考了最新一年青年和面上基金模板，重新修改了页面布局、字体类型和大小以及颜色、标题内容，以期做到与 Word 模板尽可能的相似。主要贡献如下：
@@ -109,9 +42,7 @@
 最新的模板可以从 Github 上的项目主页\footnote{最新模板 Github 地址：\href{https://github.com/YimianDai/iNSFC}{https://github.com/YimianDai/iNSFC}}下载到。为防 Github 惨遭不测，国内用户也可访问 coding.net 上的项目备份\footnote{最新模板 coding.net 地址：\href{https://coding.net/u/YimianDai/p/iNSFC/git}{https://coding.net/u/YimianDai/p/iNSFC/git}}下载最新模板。
 匆忙写就，难免疏忽。对于不足之处，欢迎在 Github 提交 issue，在文章留言区留言\footnote{留言区地址：\href{http://lowrank.science/NSFC-LaTeX/}{http://lowrank.science/NSFC-LaTeX/}}，或者直接给我写邮件（yimian dot dai at gmail dot com），在此先行谢过各位。
 
-% 余下部分安排如下。第 2 部分主要介绍模板的使用以及如何自主配置。第 3 部分对公式、图表、参考文献给出了相应的使用案例。
-
-\NsfcSection{2}{项目的研究内容、研究目标，以及拟解决的关键科学问题}{（此部分为重点阐述内容）；}
+\NsfcSection{项目的研究内容、研究目标，以及拟解决的关键科学问题}{（此部分为重点阐述内容）；}
 
 \textbf{最新文档请看 ReadMe，下文只做测试用。}
 
@@ -188,12 +119,11 @@ demo.tex 用 LuaLaTeX 也可以编译通过，但标题加粗部分会不再是�
 因为写 demo，我把参考文献放这里了，真写本子的时候，还是要放在国内外概况那边。
 
 % 因为写 demo，我把参考文献放这里了，真写本子的时候，还是要放在国内外概况那边
-\begin{spacing}{1.3} % 行距
-	\zihao{5} \songti   
+\begin{bibenv}
 	\bibliographystyle{gbt7714-nsfc}
-	\bibliography{ref}  
-	\vspace{11bp}
-\end{spacing}
+	\bibliography{ref} 
+\end{bibenv}
+
 
 \subsection{正文与公式的间距}
 正文与公式的间距可以通过下面两行代码调整，模板默认为 0pt
@@ -210,7 +140,7 @@ demo.tex 用 LuaLaTeX 也可以编译通过，但标题加粗部分会不再是�
 
 这段文字用来测试正文与公式的间距。
 \begin{equation}
-	E = MC^2
+E = MC^2
 \end{equation}
 这段文字用来测试正文与公式的间距。
 
@@ -224,15 +154,15 @@ demo.tex 用 LuaLaTeX 也可以编译通过，但标题加粗部分会不再是�
 
 \begin{figure*}[htb!]
 	\centering  
-	\subfloat[\kaishu 涅尓瓦]{\includegraphics[width=0.17\textwidth]{"./Nerva"}\label{subfig:Nerva}
+	\subfloat[涅尓瓦]{\includegraphics[width=0.17\textwidth]{./Nerva}\label{subfig:Nerva}
 	}  
-	\subfloat[图拉真]{\includegraphics[width=0.17\textwidth]{"./Traianus"}\label{subfig:Traianus}
+	\subfloat[图拉真]{\includegraphics[width=0.17\textwidth]{./Traianus}\label{subfig:Traianus}
 	}
-	\subfloat[哈德良]{\includegraphics[width=0.17\textwidth]{"./Hadrian"}\label{subfig:Hadrian}
+	\subfloat[哈德良]{\includegraphics[width=0.17\textwidth]{./Hadrian}\label{subfig:Hadrian}
 	}
-	\subfloat[安敦尼\ 庇护]{\includegraphics[width=0.17\textwidth]{"./Antoninus_Pius"}\label{subfig:Antoninus_Pius}
+	\subfloat[安敦尼\ 庇护]{\includegraphics[width=0.17\textwidth]{./Antoninus_Pius}\label{subfig:Antoninus_Pius}
 	}
-	\subfloat[马可\ 奥勒留]{\includegraphics[width=0.17\textwidth]{"./Marcus_Aurelius"}\label{subfig:Aurelius}
+	\subfloat[马可\ 奥勒留]{\includegraphics[width=0.17\textwidth]{./Marcus_Aurelius}\label{subfig:Aurelius}
 	}    
 	\caption{罗马帝国五贤帝.}
 	\label{fig:Rome}
@@ -254,7 +184,7 @@ demo.tex 用 LuaLaTeX 也可以编译通过，但标题加粗部分会不再是�
 		Method & \multicolumn{3}{l}{XXX1} & & \multicolumn{3}{l}{XXX2} & & \multicolumn{3}{l}{XXX3} & & \multicolumn{3}{l}{XXX4} \\ 
 		\cmidrule{2-4} \cmidrule{6-8} \cmidrule{10-12} \cmidrule{14-16}
 		% \cline{2-4} \cline{6-8} \cline{10-12} \cline{14-16}
-		        & \multicolumn{1}{l}{指标1} & \multicolumn{1}{l}{指标2} & \multicolumn{1}{l}{指标3} &           & \multicolumn{1}{l}{指标1} & \multicolumn{1}{l}{指标2} & \multicolumn{1}{l}{指标3} &           & \multicolumn{1}{l}{指标1} & \multicolumn{1}{l}{指标2} & \multicolumn{1}{l}{指标3} &           & \multicolumn{1}{l}{指标1} & \multicolumn{1}{l}{指标2} & \multicolumn{1}{l}{指标3} \\
+		& \multicolumn{1}{l}{指标1} & \multicolumn{1}{l}{指标2} & \multicolumn{1}{l}{指标3} &           & \multicolumn{1}{l}{指标1} & \multicolumn{1}{l}{指标2} & \multicolumn{1}{l}{指标3} &           & \multicolumn{1}{l}{指标1} & \multicolumn{1}{l}{指标2} & \multicolumn{1}{l}{指标3} &           & \multicolumn{1}{l}{指标1} & \multicolumn{1}{l}{指标2} & \multicolumn{1}{l}{指标3} \\
 		\midrule          
 		Method1 & 1.49                        & 3.20                        & 3.26                        &           & 1.02                        & 3.75                        & 3.44                        &           & 2.80                        & 3.57                        & 3.87                        &           & 2.82                        & 7.51                        & 4.90                        \\
 		Method2 & 4.83                        & 8.51                        & 10.90                       &           & 5.64                        & 5.72                        & 7.81                        &           & 3.99                        & 5.68                        & 9.82                        &           & 5.65                        & 19.81                       & 17.75                       \\
@@ -268,10 +198,8 @@ demo.tex 用 LuaLaTeX 也可以编译通过，但标题加粗部分会不再是�
 	\label{tab:Quantitative}%
 \end{table}%
 
-唔，到饭点了，我饿了，就到这里吧。相信打算用这个模板的，都是 LaTeX 老手了，看下代码也都能明白了。
-
 \subsection*{致谢}
-感谢程明明教授的首创性工作，LaTeX 社区的 L 叔的细心指导，水木社区 chengsshi 的指正。
+感谢南京航空航天大学戴一冕的模板\href{https://github.com/YimianDai/iNSFC}{iNSFC}。
 % {
 %   \raggedleft
 %   2017 年 2 月 27 日
@@ -279,71 +207,18 @@ demo.tex 用 LuaLaTeX 也可以编译通过，但标题加粗部分会不再是�
 
 {
 	\raggedleft 
-	南京航空航天大学~ 戴一冕\\
-	西安电子科技大学~ 陈佳伟\\
-	2017 年 2 月 27 日\\
+	Yang Luo \\
+	2020 年 1 月 29 日\\
 }
 
-
-
-% {
-%   \raggedleft 
-%   南京航空航天大学\\
-%   戴一冕\\
-%   西安电子科技大学 \\
-%   陈佳伟  \\
-%   \today
-% }
-
-\NsfcSection{3}{拟采取的研究方案及可行性分析}{（包括研究方法、技术路线、实验手段、关键技术等说明）；}
+\NsfcSection{拟采取的研究方案及可行性分析}{（包括研究方法、技术路线、实验手段、关键技术等说明）；}
 
 无
 
-\NsfcSection{4}{本项目的特色与创新之处；}{}
+\NsfcSection{本项目的特色与创新之处；}{}
 
 无
 
-\NsfcSection{5}{年度研究计划及预期研究结果}{（包括拟组织的重要学术交流活动、国际合作与交流计划等）。}
+\NsfcSection{年度研究计划及预期研究结果}{（包括拟组织的重要学术交流活动、国际合作与交流计划等）。}
 
 无
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\NsfcChapter{（二）研究基础与工作条件}{}
-
-
-\NsfcSection{1}{研究基础}{（与本项目相关的研究工作积累和已取得的研究工作成绩）；}
-
-无
-
-\NsfcSection{2}{工作条件}{（包括已具备的实验条件，尚缺少的实验条件和拟解决的途径，包括利用国家实验室、国家重点实验室和部门重点实验室等研究基地的计划与落实情况）；}
-
-无
-
-\NsfcSection{3}{正在承担的与本项目相关的科研项目情况}{（申请人和项目组主要参与者正在承担的与本项目相关的科研项目情况，包括国家自然科学基金的项目和国家其他科技计划项目，要注明项目的名称和编号、经费来源、起止年月、与本项目的关系及负责的内容等）；}
-
-无
-
-\NsfcSection{4}{完成国家自然科学基金项目情况}{（对申请人负责的前一个已结题科学基金项目（项目名称及批准号）完成情况、后续研究进展及与本申请项目的关系加以详细说明。另附该已结题项目研究工作总结摘要（限500字）和相关成果的详细目录）。}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-无
-
-\NsfcChapter{（三）其他需要说明的问题}{}
-
-\NsfcSection{1}{}{申请人同年申请不同类型的国家自然科学基金项目情况（列明同年申请的其他项目的项目类型、项目名称信息，并说明与本项目之间的区别与联系）。}
-
-无
-
-\NsfcSection{2}{}{具有高级专业技术职务（职称）的申请人或者主要参与者是否存在同年申请或者参与申请国家自然科学基金项目的单位不一致的情况；如存在上述情况，列明所涉及人员的姓名，申请或参与申请的其他项目的项目类型、项目名称、单位名称、上述人员在该项目中是申请人还是参与者，并说明单位不一致原因。}
-
-无
-
-\NsfcSection{3}{}{具有高级专业技术职务（职称）的申请人或者主要参与者是否存在与正在承担的国家自然科学基金项目的单位不一致的情况；如存在上述情况，列明所涉及人员的姓名，正在承担项目的批准号、项目类型、项目名称、单位名称、起止年月，并说明单位不一致原因。}
-
-无
-
-\NsfcSection{4}{}{其他。}
-
-
-\end{document}

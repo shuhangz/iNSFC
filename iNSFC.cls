@@ -157,8 +157,9 @@
 \newcommand{\qianyan}{%
 	\begin{center}
 		{\zihao{3} \textbf{报告正文}   \vspace{-1ex}}
-	\end{center} 
-{\zihao{4}\phantom{空格}参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。}\alert{请勿删除或改动下述提纲标题及括号中的文字。\vspace{9bp}}
+	\end{center}
+ 
+{\zihao{4} 参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。}\alert{请勿删除或改动下述提纲标题及括号中的文字。\vspace{9bp}}
 }
 
 \newcommand{\insertref}[1]{%

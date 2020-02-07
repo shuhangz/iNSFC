@@ -107,8 +107,10 @@
 \captionsetup[figure]{labelsep=space} % 空格 space；点 period；冒号 colon
 \captionsetup[table]{labelsep=space}  % 空格 space；点 period；冒号 colon
 %设置subsubsection格式
-\titleformat{\subsubsection}[block]{\hspace{3em}}{\thesubsubsection}{1em}{}
-\titleformat{\subsection}[block]{\bf\songti}{\thesubsection}{1em}{}
+\renewcommand{\thesubsubsection}{(\arabic{subsubsection})} % subsubsection下标号显示为 (1) 
+\titleformat{\subsubsection}[block]{\bf\hspace{3em}}{\thesubsubsection}{1em}{} %subsubsection格式
+%设置subsection格式
+\titleformat{\subsection}[block]{\bf\songti}{\thesubsection}{1em}{} %subsection格式
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -57,13 +57,13 @@
 %加载caption宏包，设置图标标题样式
 \RequirePackage{caption}
 %加载natbib，设置参考文献引用格式
-\RequirePackage[square,numbers,sort&compress]{natbib}   % For Reference
+\RequirePackage[square,super,comma,sort&compress]{natbib}   % For Reference
 \newcommand{\citess}[1]{\textsuperscript{\cite{#1}}}
 \setlength{\bibsep}{1pt plus 0.3ex}
 %加载标题设置宏包
 \RequirePackage{titlesec}
 %加载文献引用样式
-\RequirePackage{gbt7714}
+%\RequirePackage{gbt7714}
 %定义行内引用\inlinecite
 \newcommand{\inlinecite}[1]{{\setcitestyle{square,numbers}\cite{#1}}}
 

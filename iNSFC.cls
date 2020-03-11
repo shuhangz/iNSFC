@@ -96,7 +96,7 @@
 %设置英文字体为新罗马字体
 \setmainfont{Times New Roman}
 %AutoFakeBold: 使用伪粗体，由于LaTeX下楷体没有Bold形式，因此采用伪粗体来上实现粗体效果，传递给楷体
-\setCJKmainfont[AutoFakeBold]{KaiTi}
+\setCJKmainfont[AutoFakeBold]{SimSun}
 
 %通过更新\refname设置参考文献标题样式
 \renewcommand\refname{
@@ -132,8 +132,8 @@
 % \setstretch{1.5} % 22 bp / 14 pt = 1.571
 
 % For bule regular 14 bp NSFC words 
-\newcommand{\NsfcNote}[1]{\textcolor{NsfcBlue}{{\zihao{4}{{#1}}}}}
-\newcommand{\alert}[1]{\textcolor{NsfcBlue}{{\zihao{4}{{\bfseries #1}}}}}
+\newcommand{\NsfcNote}[1]{\textcolor{NsfcBlue}{{\zihao{4}{{\kaishu #1}}}}}
+\newcommand{\alert}[1]{\textcolor{NsfcBlue}{{\zihao{4}{{\bfseries \kaishu #1}}}}}
 
 % For the chapter name like （一）立项依据与研究内容（4000-8000字）
 \newcommand{\NsfcChapter}[2]{ 
@@ -165,7 +165,7 @@
 		{\zihao{3} \textbf{报告正文}   \vspace{-1ex}}
 	\end{center}
  
-{\zihao{4} 参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。}\alert{请勿删除或改动下述提纲标题及括号中的文字。\vspace{9bp}}
+{\zihao{4} \kaishu 参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。}\alert{请勿删除或改动下述提纲标题及括号中的文字。\vspace{9bp}}
 }
 
 \newcommand{\insertref}[1]{%

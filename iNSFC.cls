@@ -37,7 +37,7 @@
 \RequirePackage{graphicx} 
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
-\RequirePackage{times}
+\RequirePackage{txfonts}
 \RequirePackage[subrefformat=parens,labelformat=parens]{subfig} %
 \RequirePackage{booktabs} % for \toprule \midrule \bottomrule \cmidrule
 \RequirePackage{cleveref}

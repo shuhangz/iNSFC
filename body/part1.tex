@@ -119,10 +119,15 @@ demo.tex 用 LuaLaTeX 也可以编译通过，但标题加粗部分会不再是�
 因为写 demo，我把参考文献放这里了，真写本子的时候，还是要放在国内外概况那边。
 
 % 因为写 demo，我把参考文献放这里了，真写本子的时候，还是要放在国内外概况那边
-\begin{bibenv}
-	\bibliographystyle{gbt7714-nsfc}
-	\bibliography{ref} 
-\end{bibenv}
+% 竖直间距的控制
+\setlength{\bibitemsep}{0ex}
+\setlength{\bibnamesep}{0ex}
+\setlength{\bibinitsep}{0ex}
+%行距正常情况下是由文档的设置来设定的，比如\linespread,\baselinestretch,\fontsize等命令，以及zhlineskip宏包等。比如：
+\linespread{1.3}
+\emergencystretch=1em
+\printbibliography[heading=subbibliography,title=参考文献]
+
 
 
 \subsection{正文与公式的间距}

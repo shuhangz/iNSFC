@@ -85,10 +85,10 @@ FUNCTION {cap.edition.en} 		{"~ed"}
 FUNCTION {cap.edition.zh} 		{"版"}
 FUNCTION {cap.anonymous.en} 	{"Anon"}
 FUNCTION {cap.anonymous.zh} 	{"佚名"}
-FUNCTION {cap.no.address.en} 	{"[S.l.]"}
-FUNCTION {cap.no.address.zh} 	{"[出版地不详]"}
-FUNCTION {cap.no.publisher.en} 	{"[s.n.]"}
-FUNCTION {cap.no.publisher.zh} 	{"[出版者不详]"}
+FUNCTION {cap.no.address.en} 	{""}
+FUNCTION {cap.no.address.zh} 	{""}
+FUNCTION {cap.no.publisher.en} 	{""}
+FUNCTION {cap.no.publisher.zh} 	{""}
 FUNCTION {cap.et.al.en} 		{", et~al"}
 FUNCTION {cap.et.al.zh} 		{", 等"}
 FUNCTION {cap.translate.en} 	{"~trans"}

@@ -176,7 +176,7 @@ bibstyle=gb7714-2015,gbbiblabel=dot,gbnamefmt=lowercase,maxbibnames=5,minbibname
 	%  \setcounter{section}{#1}
 	\setcounter{subsection}{0}
 	% For xelatex
-	\indent \NsfcNote{\thesection. }{\bfseries\NsfcNote{#1}}\NsfcNote{#2}%
+	\indent \NsfcNote{\thesection.\enspace}{\bfseries\NsfcNote{#1}}\NsfcNote{#2}%
 	% For pdflatex
 	% \indent \NsfcNote{#1．}{\bfseries\NsfcNote{#2}}\NsfcNote{#3} %
 }

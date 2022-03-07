@@ -61,7 +61,7 @@
 % \usepackage[backend=biber,citestyle=gb7714-2015ay,
 % bibstyle=gb7714-2015,gbbiblabel=dot,gbnamefmt=lowercase,maxbibnames=5,minbibnames=5,gbpub=false,doi=false,sorting=gb7714-2015]{biblatex}
 \usepackage[backend=biber,citestyle=gb7714-2015ay,
-bibstyle=gb7714-2015,gbbiblabel=dot,gbnamefmt=lowercase,maxbibnames=5,minbibnames=5,gbpub=false,doi=false,gbpunctin=false,gbtype=false,url=false,sorting=gb7714-2015]{biblatex}
+bibstyle=gb7714-2015,gbbiblabel=dot,gbnamefmt=lowercase,maxbibnames=5,minbibnames=1,gbpub=false,doi=false,gbpunctin=false,gbtype=false,url=false,sorting=gb7714-2015, sortlocale=zh__pinyin]{biblatex}
 % \usepackage[backend=biber,style=authoryear]{biblatex}
 \newcommand{\citess}[1]{\textsuperscript{\cite{#1}}}
 % \setlength{\bibsep}{1pt plus 0.3ex}
